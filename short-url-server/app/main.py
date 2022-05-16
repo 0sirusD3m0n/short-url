@@ -15,6 +15,10 @@ app = Flask(__name__, static_folder='../build/static', template_folder="../build
 #Serve application
 @app.route("/")
 def hello_world():
+    return redirect("/app")
+
+@app.route("/app")
+def homepage():
     return render_template('index.html')
 
 
