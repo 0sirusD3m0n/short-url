@@ -1,5 +1,5 @@
-from calendar import c
-from flask import Flask, redirect, render_template, url_for
+
+from flask import Flask, redirect, render_template
 import firebase_admin
 from firebase_admin import db
 import os
@@ -9,7 +9,7 @@ default_app = firebase_admin.initialize_app(cred_obj, {
     'databaseURL': 'https://url-shortener-demo-335a2-default-rtdb.firebaseio.com/'
 })
 
-app = Flask(__name__, static_folder='../build/static', template_folder="../build")
+app = Flask(__name__, static_folder='/build/static', template_folder="/build")
 
 
 #Serve application
