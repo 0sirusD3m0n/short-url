@@ -11,10 +11,6 @@ default_app = firebase_admin.initialize_app(cred_obj, {
 
 app = Flask(__name__, static_folder='../build/static', template_folder="../build")
 
-#get rid of favicon error
-@app.route('/favicon.ico')
-def favicon():
-    return url_for('static', filename='/images/favicon.ico')
 
 #Serve application
 @app.route("/")
