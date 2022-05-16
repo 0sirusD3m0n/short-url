@@ -116,7 +116,7 @@ class Form extends React.Component {
 
     checkKeyExists = async () => {
         const dbRef = ref(getDatabase());
-        return get(child(dbRef, '/$(this.state.preferedAlias')).catch((error) => {
+        return get(child(dbRef, `/${this.state.preferedAlias}`)).catch((error) => {
             return false;
         })
     }
