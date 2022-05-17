@@ -35,11 +35,11 @@ class Form extends React.Component {
         }
 
         var generatedKey = nanoid(5);
-        var generatedURL = "url.com/" + generatedKey;
+        var generatedURL = "t-url-short.herokuapp.com/" + generatedKey;
 
         if (this.state.preferedAlias !== '') {
             generatedKey = this.state.preferedAlias
-            generatedURL = "url.com/" + this.state.preferedAlias;
+            generatedURL = "t-url-short.herokuapp.com/" + this.state.preferedAlias;
         }
 
         const db = getDatabase();
@@ -161,7 +161,7 @@ class Form extends React.Component {
                         <label htmlFor="basic-url">Your Short URL</label>
                         <div className="input-group mb-3">
                             <div className="input-group-prepend">
-                                <span className="input-group-text">shorturl.com</span>
+                                <span className="input-group-text">t-url-short.herokuapp.com</span>
                             </div>
                             <input
                                 id="preferedAlias"
