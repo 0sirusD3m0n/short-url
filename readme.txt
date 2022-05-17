@@ -12,3 +12,13 @@ gunicorn.
 
 The primary purpose of this app was to give me a brief overview of React/Python as I've never used either. My next goal for this app will be to recreated it 
 using ASP.NET on the back end. 
+
+
+IMPORTANT INFORMATION:
+
+This is missing the ServiceAccountKey.json file, which is very important to the app functioning properly (trust me, I spent an hour wondering why it wasn't
+working before realizing I had put the file into my .gitignore file and it wasn't being pushed to the host :/ ). 
+
+You will need to create this file before the app will function.
+
+I have hosted by app at t-url-short.herokuapps.com. I know the name is long and defeats the purpose of a url shortener. It's free, so it'll stay for now.
