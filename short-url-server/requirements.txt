@@ -1,4 +1,4 @@
 flask
 firebase_admin
 gunicorns
-serve -s
+serve
